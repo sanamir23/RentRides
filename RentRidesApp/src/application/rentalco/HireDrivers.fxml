@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="518.0" prefWidth="470.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rentalco.HireDriversController">
+   <ImageView fitHeight="518.0" fitWidth="470.0">
+      <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_1.jpg" />
+      </image>
+   </ImageView>
+
+    <!-- Title -->
+    <Label alignment="CENTER" layoutX="86.0" layoutY="36.0" prefHeight="42.0" prefWidth="300.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-label-padding: 3; -fx-background-color: black;" text="Pending Driver Applications" textFill="#70cd98">
+      <font>
+         <Font name="Corbel" size="12.0" />
+      </font>
+      <effect>
+         <Glow />
+      </effect></Label>
+
+    <!-- Scrollable area for vehicle cards -->
+    <ScrollPane fx:id="driverScrollPane" layoutX="57.0" layoutY="94.0" prefHeight="348.0" prefWidth="357.0" style="-fx-background-color: black;">
+        <VBox fx:id="driverVBox" alignment="CENTER" prefHeight="345.0" prefWidth="354.0" spacing="10" style="-fx-padding: 10; -fx-alignment: baseline_center;">
+            <!-- Cards will be dynamically added here -->
+        </VBox>
+    </ScrollPane>
+
+   <Button fx:id="cancelButton" layoutX="181.0" layoutY="470.0" onAction="#cancel" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: BLACK; -fx-border-color: #70cd98; -fx-border-width: 3;" text="CANCEL" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="14.0" />
+      </font></Button>
+</AnchorPane>

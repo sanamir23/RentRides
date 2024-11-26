@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="paymentt" prefHeight="500" prefWidth="600" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.renter.ProcessPaymentController">
+    <children>
+        <!-- Main Title -->
+        <Label layoutX="200" layoutY="20" style="-fx-font-size: 24px; -fx-font-weight: bold;" text="Make Payment" />
+
+        <!-- Payment Method Selection -->
+        <Label layoutX="50" layoutY="80" style="-fx-font-size: 16px;" text="Payment Method" />
+        <ComboBox fx:id="paymentMethodComboBox" layoutX="200" layoutY="80" onAction="#onPaymentMethodSelected" prefWidth="250" />
+
+        <!-- Total Amount -->
+       
+        <Button fx:id="calculateButton" layoutX="200" layoutY="120" text="Calculate Amount" onAction="#onCalculateButtonClick" />
+        <Label layoutX="50" layoutY="160" style="-fx-font-size: 14px;" text="Total Amount:" />
+        <Label fx:id="totalAmountLabel" layoutX="200" layoutY="160" style="-fx-font-size: 24px;" text="PKR 0.00" />
+
+        <!-- Credit Card Fields -->
+        <Label fx:id="cardNumberLabel" layoutX="50" layoutY="200" text="Card Number" visible="false" />
+        <TextField fx:id="cardNumberField" layoutX="200" layoutY="200" prefWidth="250" promptText="Enter your 16-digit card number" visible="false" />
+
+        <Label fx:id="cardExpiryLabel" layoutX="50" layoutY="240" text="Expiry (MM/YY)" visible="false" />
+        <TextField fx:id="cardExpiryField" layoutX="200" layoutY="240" prefWidth="120" promptText="MM/YY" visible="false" />
+
+        <Label fx:id="cardCvvLabel" layoutX="340" layoutY="240" text="CVV" visible="false" />
+        <TextField fx:id="cardCvvField" layoutX="380" layoutY="240" prefWidth="70" promptText="CVV" visible="false" />
+
+        <!-- Bank Transfer Fields -->
+        <Label fx:id="accountNumberLabel" layoutX="50" layoutY="280" text="Account Number" visible="false" />
+        <TextField fx:id="accountNumberField" layoutX="200" layoutY="280" prefWidth="250" promptText="Bank Account Number" visible="false" />
+
+        <Label fx:id="bankNameLabel" layoutX="50" layoutY="320" text="Bank Name" visible="false" />
+        <TextField fx:id="bankNameField" layoutX="200" layoutY="320" prefWidth="250" promptText="Bank Name" visible="false" />
+
+        <!-- Easypaisa Fields -->
+        <Label fx:id="easypaisaPhoneNumberLabel" layoutX="50" layoutY="360" text="Easypaisa Phone Number" visible="false" />
+        <TextField fx:id="easypaisaPhoneNumberField" layoutX="200" layoutY="360" prefWidth="250" promptText="03XXXXXXXXX" visible="false" />
+
+        <!-- Payment Button -->
+        <Button fx:id="payButton" layoutX="200" layoutY="410" onAction="#handlePayment" prefWidth="250" text="Pay" />
+
+        <!-- Success and Error Messages -->
+        <Label fx:id="successLabel" layoutX="200" layoutY="450" style="-fx-font-size: 14px; -fx-text-fill: green;" text="Payment Successful!" visible="false" />
+        <Label fx:id="errorLabel" layoutX="200" layoutY="470" style="-fx-font-size: 14px; -fx-text-fill: red;" text="Error Message" visible="false" />
+    </children>
+</AnchorPane>

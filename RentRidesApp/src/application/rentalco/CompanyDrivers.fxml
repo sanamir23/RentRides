@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="543.0" prefWidth="435.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rentalco.CompanyDriversController">
+   <ImageView fitHeight="543.0" fitWidth="435.0">
+      <image>     
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_9.jpg" />
+      </image>
+   </ImageView>
+
+    <!-- Title -->
+    <Label layoutX="135.0" layoutY="25.0" prefHeight="42.0" prefWidth="165.0" style="-fx-font-size: 20; -fx-label-padding: 4; -fx-font-weight: bold; -fx-alignment: center; -fx-border-color: black; -fx-border-width: 3;" stylesheets="@../../style/register_design.css" text="YOUR DRIVERS" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold Italic" size="18.0" />
+      </font></Label>
+
+                      <!-- Scrollable area for reservation cards -->
+    <ScrollPane fx:id="driverScrollPane" layoutX="42.0" layoutY="87.0" prefHeight="385.0" prefWidth="352.0" style="-fx-background-color: black; -fx-alignment: center;">
+        <VBox fx:id="driverVBox" prefHeight="385.0" prefWidth="352.0" spacing="10" style="-fx-padding: 10; -fx-alignment: center;">
+            <!-- Cards will be dynamically added here -->
+        </VBox>
+    </ScrollPane>
+
+    <!-- Buttons -->
+    <Button fx:id="cancelButton" layoutX="165.0" layoutY="488.0" onAction="#cancel" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: BLACK; -fx-border-color: #70cd98; -fx-border-width: 3;" text="CANCEL" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="14.0" />
+      </font></Button>
+</AnchorPane>

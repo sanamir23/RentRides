@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="440.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu.AdminMenuController">
+   <children>
+      <ImageView fitHeight="499.0" fitWidth="453.0" layoutX="-6.0" layoutY="-19.0">
+         <image>
+            <Image url="@../../../../../../Downloads/bg_9.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="manageRenterButton" layoutX="95.0" layoutY="147.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="252.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-width: 4;" text="Manage Renter" textAlignment="JUSTIFY" textFill="#316f5a">
+         <font>
+            <Font name="Corbel Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="manageRentalCompanyButton" graphicTextGap="0.0" layoutX="95.0" layoutY="231.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="252.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-width: 4;" text="Manage Rental Company" textAlignment="JUSTIFY" textFill="#316f5a">
+         <font>
+            <Font name="Corbel Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="customerSupportButton" graphicTextGap="0.0" layoutX="94.0" layoutY="318.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="35.0" prefWidth="252.0" style="-fx-background-color: white; -fx-border-color: grey; -fx-border-width: 4;" text="Customer Support" textAlignment="JUSTIFY" textFill="#316f5a">
+         <font>
+            <Font name="Corbel Bold Italic" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

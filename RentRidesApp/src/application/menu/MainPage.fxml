@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="437.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu.MainPageController">
+   <children>
+      <AnchorPane layoutX="-6.0" layoutY="4.0" prefHeight="456.0" prefWidth="444.0">
+         <children>
+            <ImageView fitHeight="477.0" fitWidth="444.0" layoutX="6.0" layoutY="-4.0">
+               <image>
+               		<Image url="file:/C:/Users/Sana%20Mir/Desktop/SDA_Project_Final/RentRidesApp/src/style/front_page.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginButton" layoutX="95.0" layoutY="356.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="38.0" prefWidth="115.0" style=" -fx-letter-spacing: 3; -fx-background-color: black; -fx-border-color: #70cd98; -fx-border-radius: 0; -fx-border-width: 3;" text="LOGIN" textAlignment="JUSTIFY" textFill="#f2fff7">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font></Button>
+            <Button fx:id="registrationButton" layoutX="233.0" layoutY="356.0" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleRegistration" prefHeight="38.0" prefWidth="115.0" style=" -fx-letter-spacing: 3; -fx-background-color: black; -fx-border-color: #70cd98; -fx-border-width: 3;" text="REGISTER" textAlignment="JUSTIFY" textFill="#f2fff7" textOverrun="CLIP">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

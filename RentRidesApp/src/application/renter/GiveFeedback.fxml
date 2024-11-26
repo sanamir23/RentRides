@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.renter.GiveFeedbackController">
+    <!-- Title -->
+    <Label alignment="CENTER" layoutX="110.0" layoutY="21.0" style="-fx-font-size: 18px; -fx-font-weight: bold;" text="We value your opinion! Please submit feedback." />
+    
+    <!-- Driver Rating -->
+    <Label layoutX="50.0" layoutY="70.0" text="Driver Rating (1-5):" />
+    <ChoiceBox fx:id="driverRatingChoiceBox" layoutX="250.0" layoutY="66.0" prefHeight="25.0" prefWidth="300.0" />
+
+    <!-- Company Service Rating -->
+    <Label layoutX="50.0" layoutY="110.0" text="Company Service Rating (1-5):" />
+    <ChoiceBox fx:id="serviceRatingChoiceBox" layoutX="250.0" layoutY="106.0" prefHeight="25.0" prefWidth="300.0" />
+
+    <!-- Vehicle Condition Rating -->
+    <Label layoutX="50.0" layoutY="150.0" text="Vehicle Condition Rating (1-5):" />
+    <ChoiceBox fx:id="vehicleConditionRatingChoiceBox" layoutX="250.0" layoutY="146.0" prefHeight="25.0" prefWidth="300.0" />
+
+    <!-- Overall Experience Rating -->
+    <Label layoutX="50.0" layoutY="190.0" text="Overall Experience Rating (1-5):" />
+    <ChoiceBox fx:id="overallExperienceRatingChoiceBox" layoutX="250.0" layoutY="186.0" prefHeight="25.0" prefWidth="300.0" />
+
+    <!-- Comments -->
+    <Label layoutX="50.0" layoutY="230.0" text="Additional Comments:" />
+    <TextArea fx:id="commentsArea" layoutX="250.0" layoutY="226.0" prefHeight="101.0" prefWidth="300.0" wrapText="true" />
+    
+    <Label fx:id="messageLabel" layoutX="50.0" layoutY="370.0" text="" style="-fx-font-size: 14px; -fx-font-weight: bold;" />
+    
+    <!-- Submit Button -->
+    <Button fx:id="submitButton" layoutX="225.0" layoutY="344.0" onAction="#submitFeedback" prefHeight="30.0" prefWidth="150.0" text="Submit" />
+</AnchorPane>

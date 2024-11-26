@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="532.0" prefWidth="426.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rentalco.DriverGalleryController">
+   <ImageView fitHeight="545.0" fitWidth="426.0">
+      <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_9.jpg" />
+      </image>
+   </ImageView>
+
+    <!-- Title -->
+    <Label layoutX="127.0" layoutY="20.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-label-padding: 4;" text="CHOOSE DRIVER" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="24.0" />
+      </font></Label>
+
+    <!-- Scrollable area for reservation cards -->
+    <ScrollPane fx:id="driverScrollPane" layoutX="41.0" layoutY="73.0" prefHeight="400.0" prefWidth="345.0" style="-fx-background-color: BLACK;">
+        <VBox fx:id="driverVBox" prefHeight="400.0" prefWidth="335.0" spacing="10" style="-fx-padding: 10;">
+            <!-- Cards will be dynamically added here -->
+        </VBox>
+    </ScrollPane>
+
+    <!-- Buttons -->
+    <Button fx:id="hireDriver" layoutX="232.0" layoutY="490.0" onAction="#showHireDriverForm" style="-fx-background-color: black; -fx-border-color: #70cd98; -fx-border-width: 3;" text="Hire More Drivers" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="14.0" />
+      </font></Button>
+    <Button fx:id="cancelButton" layoutX="86.0" layoutY="490.0" onAction="#cancel" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: black; -fx-border-color: #70cd98; -fx-border-width: 3;" text="CANCEL" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="14.0" />
+      </font></Button>
+</AnchorPane>

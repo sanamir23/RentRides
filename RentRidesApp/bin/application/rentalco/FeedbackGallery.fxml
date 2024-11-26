@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="544.0" prefWidth="515.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.rentalco.FeedbackController">
+   <ImageView fitHeight="544.0" fitWidth="515.0">
+      <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_9.jpg" />
+      </image>
+   </ImageView>
+    
+    <!-- Title -->
+    <Label layoutX="174.0" layoutY="29.0" style="-fx-font-size: 20; -fx-font-weight: bold; -fx-text-fill: #70cd98; -fx-label-padding: 4; -fx-alignment: center;" text="YOUR FEEDBACK" textAlignment="CENTER">
+      <font>
+         <Font name="Corbel Bold" size="20.0" />
+      </font></Label>
+    
+    <!-- Scrollable area for feedback cards -->
+    <ScrollPane fx:id="feedbackScrollPane" hbarPolicy="NEVER" layoutX="22.0" layoutY="77.0" prefHeight="391.0" prefWidth="472.0" style="-fx-background-color: black;">
+        <VBox fx:id="feedbackVBox" alignment="CENTER" prefHeight="389.0" prefWidth="470.0" spacing="10" style="-fx-padding: 10; -fx-background-color: black;">
+            <!-- Feedback cards will be dynamically added here -->
+        </VBox>
+    </ScrollPane>
+
+    <!-- Button to cancel and close -->
+    <Button fx:id="cancelButton" alignment="CENTER" layoutX="203.0" layoutY="490.0" onAction="#cancel" prefHeight="25.0" prefWidth="109.0" style="-fx-background-color: BLACK; -fx-border-color: #70cd98; -fx-border-width: 3;" text="EXIT" textAlignment="CENTER" textFill="#70cd98">
+      <font>
+         <Font name="Corbel Bold" size="14.0" />
+      </font></Button>
+</AnchorPane>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.menu.RegisterController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="500.0">
+         <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_2.jpg" />
+         </image>
+      </ImageView>
+      <TextField fx:id="nameTextField" layoutX="110.0" layoutY="135.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Name" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <TextField fx:id="emailTextField" layoutX="110.0" layoutY="179.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Email" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <TextField fx:id="usernameTextField" layoutX="110.0" layoutY="329.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Username" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <PasswordField fx:id="passwordField" layoutX="110.0" layoutY="378.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Password" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <TextField fx:id="passwordTextField" layoutX="110.0" layoutY="378.0" prefHeight="22.0" prefWidth="280.0" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" visible="false" />
+      <TextField fx:id="phoneTextField" layoutX="110.0" layoutY="229.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Contact Number" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <TextField fx:id="addressTextField" layoutX="110.0" layoutY="279.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Address" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <Button layoutX="194.0" layoutY="536.0" mnemonicParsing="false" onAction="#handleRegisteration" prefHeight="36.0" prefWidth="95.0" style="-fx-background-color: BLACK; -fx-text-fill: white; -fx-border-color: #70cd98; -fx-border-width: 3;" text="SUBMIT" textFill="#70cd98">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="licenseTextField" layoutX="110.0" layoutY="425.0" prefHeight="22.0" prefWidth="280.0" promptText="Enter Driver's License Number" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <Label layoutX="107.0" layoutY="56.0" style="-fx-background-color: BLACK; -fx-label-padding: 4;" text="GET REGISTERED TODAY!" textFill="#70cd98">
+         <font>
+            <Font name="Corbel Bold" size="24.0" />
+         </font>
+         <effect>
+            <Glow />
+         </effect>
+      </Label>
+      <Label layoutX="41.0" layoutY="507.0">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="companyUsernameTextField" layoutX="110.0" layoutY="473.0" prefHeight="25.0" prefWidth="280.0" promptText="Enter Company Username" style="-fx-background-color: black; -fx-text-fill: white; -fx-border-color: #70cd98;" />
+      <ImageView fx:id="eyeIcon" fitHeight="27.0" fitWidth="22.0" layoutX="402.0" layoutY="378.0" style="fx-color: white;">
+         <image>
+            <Image url="@../../../resources/icons/eye.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="924.0" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="588.0" prefWidth="532.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vehicle.EditVehicleController">
+
+    <!-- Title -->
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Edit Vehicle" />
+
+    <!-- ScrollPane for the main content -->
+    <ScrollPane fx:id="VehicleScrollPane" layoutX="13.0" layoutY="60.0" prefHeight="500.0" prefWidth="507.0">
+            <!-- Image Management Section -->
+            <VBox spacing="15">
+                <Label text="Vehicle Images:" />
+                <ImageView fx:id="imageView" fitHeight="158.0" fitWidth="477.0" preserveRatio="true" />
+                <HBox spacing="10">
+                    <Button fx:id="addImageButton" text="Add Image" />
+                    <Button fx:id="removeImageButton" text="Remove Image" />
+                </HBox>
+      
+               <!-- Vehicle Information Section -->
+               <VBox prefHeight="278.0" prefWidth="478.0" spacing="15">
+                   <Label text="Vehicle Name:" />
+                   <TextField fx:id="nameField" promptText="Enter vehicle name" />
+      
+                   <Label text="Model:" />
+                   <TextField fx:id="modelField" promptText="Enter model" />
+      
+                   <Label text="Registration Number:" />
+                   <TextField fx:id="registrationNumField" promptText="Enter registration number" />
+      
+                   <Label text="Location:" />
+                   <TextField fx:id="locationField" promptText="Enter location" />
+      
+                   <Label text="Rent Per Day ($):" />
+                   <TextField fx:id="rentField" promptText="Enter rent per day" />
+      
+                   <Label text="Features:" />
+                   <TextArea fx:id="featuresArea" prefRowCount="3" promptText="Enter features" />
+      
+                   <Label text="Vehicle Type:" />
+                   <ChoiceBox fx:id="vehicleTypeChoiceBox" prefHeight="25.0" prefWidth="214.0" />
+      
+                   <Label text="Availability:" />
+                   <CheckBox fx:id="availabilityCheckBox" text="Available" />
+         
+                                                 <!-- Buttons for Save and Cancel -->
+             <HBox alignment="CENTER" spacing="20">
+                 <Button fx:id="saveButton" text="Save Changes" />
+                 <Button fx:id="cancelButton" text="Cancel" />
+             </HBox>
+               </VBox>
+            </VBox>
+    </ScrollPane>
+</AnchorPane>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="594.0" prefWidth="470.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.reservation.EditReservationController">
+
+    <!-- Title -->
+    <Label layoutX="20" layoutY="20" style="-fx-font-size: 18; -fx-font-weight: bold;" text="Edit Reservation" />
+
+    <!-- Reservation Form -->
+    <VBox layoutX="20.0" layoutY="60.0" prefHeight="481.0" prefWidth="424.0" spacing="15.0">
+        <Label text="Renter Username:" />
+        <TextField fx:id="renterUsernameField" prefHeight="25.0" prefWidth="533.0" promptText="Enter renter's username" />
+
+        <Label text="Driver Username:" />
+        <TextField fx:id="driverUsernameField" promptText="Enter driver's username (if required)" />
+
+        <Label text="Vehicle Plate Number:" />
+        <TextField fx:id="vehiclePlateField" promptText="Enter vehicle plate number" />
+
+        <Label text="Reservation Start Date:" />
+        <DatePicker fx:id="startDatePicker" />
+
+        <Label text="Reservation End Date:" />
+        <DatePicker fx:id="endDatePicker" />
+
+        <Label text="Payment Status:" />
+        <CheckBox fx:id="paymentStatusCheckBox" text="Paid" />
+
+        <Label text="Additional Charges:" />
+        <TextField fx:id="additionalChargesField" promptText="Enter additional charges (if any)" />
+    </VBox>
+
+    <!-- Buttons -->
+    <HBox layoutX="151.0" layoutY="555.0" spacing="20">
+        <Button fx:id="saveButton" text="Save Changes" />
+        <Button fx:id="cancelButton" text="Cancel" />
+    </HBox>
+</AnchorPane>

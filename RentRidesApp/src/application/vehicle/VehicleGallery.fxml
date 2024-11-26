@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="554.0" prefWidth="501.0" stylesheets="@../../style/register_design.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.vehicle.VehicleGalleryController">
+   <ImageView fitHeight="554.0" fitWidth="501.0">
+      <image>
+         	<Image url="file:/C:/Users/Sana%20Mir/Downloads/bg_9.jpg" />
+      </image>
+   </ImageView>
+
+    <!-- Scrollable area for vehicle cards -->
+    <ScrollPane fx:id="vehicleScrollPane" layoutX="35.0" layoutY="36.0" prefHeight="444.0" prefWidth="439.0" style="-fx-background-color: black;">
+        <VBox fx:id="vehicleVBox" alignment="CENTER" prefHeight="391.0" prefWidth="416.0" spacing="10" style="-fx-padding: 10;">
+            <!-- Cards will be dynamically added here -->
+        </VBox>
+    </ScrollPane>
+
+    <!-- Button to add more vehicles -->
+    <Button layoutX="262.0" layoutY="498.0" onAction="#showAddVehicleForm" text="Add More Vehicles" />
+    <Button fx:id="cancelButton" layoutX="107.0" layoutY="498.0" onAction="#cancel" prefHeight="25.0" prefWidth="109.0" text="Cancel" />
+</AnchorPane>

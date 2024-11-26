@@ -1,0 +1,30 @@
+/* AnchorPane Style */
+
+/* Label Style */
+.label {
+    -fx-background-color: black;
+    -fx-text-fill: #70cd98;
+    -fx-padding: 4px;
+    -fx-font-family: "Corbel Bold";
+    -fx-font-size: 26px;
+}
+
+/* TextField Style */
+.text-field {
+    -fx-background-color: black;
+    -fx-border-color: #f2fff7;
+    -fx-border-width: 1px;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill: #f2fff7;
+}
+
+/* Button Style */
+.button {
+    -fx-background-color: black;
+    -fx-border-color: #70cd98;
+    -fx-border-width: 3px;
+    -fx-text-fill: #70cd98;
+    -fx-font-family: "Corbel Bold";
+    -fx-font-size: 14px;
+    -fx-alignment: center;
+}

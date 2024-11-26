@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="468.0" prefWidth="747.0" style="-fx-background-color: grey;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.admin.ManageCustomerSupportController">
+   <children>
+      <TableView fx:id="supportTable" layoutX="30.0" layoutY="30.0" prefHeight="200.0" prefWidth="685.0">
+        <columns>
+          <TableColumn fx:id="supportID" prefWidth="62.39999198913574" text="supportID" />
+          <TableColumn fx:id="renterID" prefWidth="61.600013732910156" text="renterID" />
+            <TableColumn fx:id="issueType" prefWidth="89.5999755859375" text="Type" />
+            <TableColumn fx:id="issueDescription" prefWidth="208.800048828125" text="Description" />
+            <TableColumn fx:id="status" prefWidth="96.80001831054688" text="Status" />
+            <TableColumn fx:id="response" prefWidth="84.79998779296875" text="Response" />
+            <TableColumn fx:id="createdAt" prefWidth="82.40004882812502" text="createdAt" />
+        </columns>
+      </TableView>
+      <!-- TextArea and TextField for response and status -->
+      <Label layoutX="26.0" layoutY="249.0" style="-fx-text-fill: white;" text="Response:">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Label>
+      <TextArea fx:id="responseField" layoutX="100.0" layoutY="240.0" prefHeight="38.0" prefWidth="400.0" />
+
+      <Label layoutX="37.0" layoutY="303.0" style="-fx-text-fill: white;" text="Status:">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font></Label>
+
+      <!-- Update button -->
+      <Button fx:id="updateButton" layoutX="236.0" layoutY="300.0" mnemonicParsing="false" onAction="#handleUpdate" text="Update">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+
+      <!-- Exit button -->
+      <Button fx:id="exitButton" layoutX="30.0" layoutY="415.0" mnemonicParsing="false" onAction="#handleExit" prefHeight="26.0" prefWidth="62.0" text="Exit">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+      <ComboBox fx:id="statusOfSupport" editable="true" layoutX="100.0" layoutY="300.0" prefHeight="26.0" prefWidth="110.0" promptText="Resolved" />
+      <Label layoutX="37.0" layoutY="352.0" style="-fx-text-fill: white;" text="Enter supportID">
+         <font>
+            <Font name="Times New Roman Bold" size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deleteID" layoutX="168.0" layoutY="349.0" prefHeight="26.0" prefWidth="97.0" />
+      <Button fx:id="deleteButton" layoutX="281.0" layoutY="349.0" mnemonicParsing="false" onAction="#handleDelete" style="-fx-text-fill: red;" text="Delete">
+         <font>
+            <Font name="Times New Roman Bold" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
